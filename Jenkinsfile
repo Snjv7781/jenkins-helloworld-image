@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/snjv7781/jenkins-helloworld-image.git'
+                git branch: 'master', url: 'https://github.com/snjv7781/jenkins-helloworld-image.git'
             }
         }
         stage('Build Docker Image') {
